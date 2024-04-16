@@ -1,5 +1,7 @@
 package com.editor;
 
+import com.types.Task;
+
 public class SimpleTaskEditor implements TaskEditor {
     public void addTask(Task task) {
         // Implémentation

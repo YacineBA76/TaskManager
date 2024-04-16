@@ -1,5 +1,7 @@
 package com.editor;
 
+import com.types.Task;
+
 public class ComplexTaskEditor implements TaskEditor {
     public void addTask(Task task) {
         // Implémentation
@@ -20,4 +22,5 @@ public class ComplexTaskEditor implements TaskEditor {
     public void loadFromFile() {
         // Implémentation
     }
+
 }

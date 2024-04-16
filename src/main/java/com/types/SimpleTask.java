@@ -1,5 +1,8 @@
 package com.types;
 
+import java.time.Duration;
+import java.util.Date;
+
 public class SimpleTask implements Task {
     private String description;
     private int progress;

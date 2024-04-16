@@ -1,5 +1,6 @@
 package com.editor;
 
+import com.types.Task;
 
 public interface TaskEditor {
     void addTask(Task task);
