@@ -1,6 +1,6 @@
-package com.editor;
+package view;
 
-import com.types.Task;
+import models.Task;
 
 public interface TaskEditor {
     void addTask(Task task);

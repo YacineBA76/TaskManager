@@ -1,4 +1,4 @@
-package com.types;
+package models;
 
 public enum Priority {
     URGENT,

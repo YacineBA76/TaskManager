@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.Button?>
 <VBox xmlns:fx="http://javafx.com/fxml" fx:controller="controller.MainController">
-    <TextField fx:id="taskDescriptionTextField" promptText="Enter task description"/>
-    <Button text="Add Task" onAction="#onAddTaskButtonClick"/>
-    <Label fx:id="taskStatusLabel"/>
+    <Text text="Bienvenue dans votre application de gestion des tâches !" />  <!-- Message de bienvenue -->
+    <Label fx:id="taskNameLabel"/>
+    <Button text="Close" onAction="#onCloseButtonClick"/> <!-- Ajout d'un bouton pour fermer la fenêtre -->
 </VBox>

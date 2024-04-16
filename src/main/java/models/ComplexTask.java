@@ -1,4 +1,7 @@
-package com.types;
+package models;
+
+import models.Priority;
+import models.Task;
 
 import java.time.Duration;
 import java.util.Date;

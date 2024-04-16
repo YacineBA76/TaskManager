@@ -1,6 +1,6 @@
-package com.creators;
+package models.creators;
 
-import com.types.Task;
+import models.Task;
 
 public interface TaskFactory {
     Task createTask();

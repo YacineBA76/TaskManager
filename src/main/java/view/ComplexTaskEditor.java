@@ -1,8 +1,9 @@
-package com.editor;
+package view;
 
-import com.types.Task;
+import models.Task;
+import view.TaskEditor;
 
-public class BooleanTaskEditor implements TaskEditor {
+public class ComplexTaskEditor implements TaskEditor {
     public void addTask(Task task) {
         // Implémentation
     }
@@ -22,4 +23,5 @@ public class BooleanTaskEditor implements TaskEditor {
     public void loadFromFile() {
         // Implémentation
     }
+
 }

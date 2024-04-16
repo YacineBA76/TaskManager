@@ -1,6 +1,7 @@
-package com.editor;
+package view;
 
-import com.types.Task;
+import models.Task;
+import view.TaskEditor;
 
 public class SimpleTaskEditor implements TaskEditor {
     public void addTask(Task task) {
