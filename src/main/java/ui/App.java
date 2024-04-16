@@ -10,17 +10,18 @@ public class App extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        // Chargement du fichier FXML principal
         Parent root = FXMLLoader.load(getClass().getResource("/MainView.fxml"));
+        Scene scene = new Scene(root, 800, 800);
 
-        // Configuration de la scène
-        Scene scene = new Scene(root, 500, 500);
+        scene.getStylesheets().add(getClass().getResource("/styles/main-page.css").toExternalForm());
+
         primaryStage.setScene(scene);
-        primaryStage.setTitle("Task Manager"); // Titre de l'application
+        primaryStage.setTitle("Task Manager");
         primaryStage.show();
     }
 
+
     public static void main(String[] args) {
-        launch(args); // Lancement de l'application
+        launch(args);
     }
 }

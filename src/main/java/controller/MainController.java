@@ -4,34 +4,44 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
-import java.time.Duration;
-import java.util.Date;
-
-import javafx.stage.Stage;
-import models.Priority;
-import models.SimpleTask;
+import javafx.scene.text.Text;
 
 public class MainController {
-    @FXML
-    private TextField taskNameTextField;
 
     @FXML
-    private Label taskNameLabel;
+    private Label welcomeLabel;
 
-    // Méthode appelée lors du clic sur le bouton "Add Task"
     @FXML
-    private void onAddTaskButtonClick() {
-        String taskName = taskNameTextField.getText();
-        SimpleTask task = new SimpleTask("Task 1", 20, Priority.URGENT, Duration.ofHours(2), new Date());
-        taskNameLabel.setText("New task added: " + task.getDescription());
+    private Text welcomeText;
+
+    @FXML
+    private Text headerTitle;
+
+    @FXML
+    private Text footer1Text;
+
+    @FXML
+    private Text footerText;
+
+    @FXML
+    private Text buttonStart;
+
+    @FXML
+    private Button startButton;
+
+    @FXML
+    public void initialize() {
+        headerTitle.setText("Gestion des tâches");
+        welcomeText.setText("Bienvenue dans votre application de gestion des tâches !");
+        welcomeLabel.setText("Ici, vous avez la liberté de vous organiser à votre propre rythme");
+        startButton.setText("Commencer");
+        footerText.setText("Application réalisée par Toubal Zine-Eddine et Benahmed Yacine");
+        footer1Text.setText("© 2024 Tous droits réservés");
     }
 
     @FXML
-    private void onCloseButtonClick(ActionEvent event) {
-        // Récupérer la scène à partir de n'importe quel nœud de la vue
-        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
-        // Fermer la scène
-        stage.close();
+    private void onStartButtonClick(ActionEvent event) {
+        // Code à exécuter lorsque le bouton "Commencer" est cliqué
+        System.out.println("Le bouton 'Commencer' a été cliqué !");
     }
 }
