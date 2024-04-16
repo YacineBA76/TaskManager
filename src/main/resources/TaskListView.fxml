@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="controller.TaskListController">
+   <!-- <TextField fx:id="taskNameField" promptText="Nom de la tâche"/>
+    <ListView fx:id="taskListView"/> -->
+    <Button text="Ajouter" onAction="#addTask"/>
+    <Button text="Supprimer" onAction="#deleteTask"/>
+</VBox>

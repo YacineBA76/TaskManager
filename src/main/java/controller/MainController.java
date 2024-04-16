@@ -5,7 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.text.Text;
-
+import utils.NavigationManager;
 public class MainController {
 
     @FXML
@@ -23,8 +23,6 @@ public class MainController {
     @FXML
     private Text footerText;
 
-    @FXML
-    private Text buttonStart;
 
     @FXML
     private Button startButton;
@@ -37,6 +35,10 @@ public class MainController {
         startButton.setText("Commencer");
         footerText.setText("Application réalisée par Toubal Zine-Eddine et Benahmed Yacine");
         footer1Text.setText("© 2024 Tous droits réservés");
+        startButton.setOnAction(event -> {
+            System.out.println("Le bouton 'Commencer' a été cliqué ! navigate to taskListView");
+            NavigationManager.navigateTo("/TaskListView.fxml");
+        });
     }
 
     @FXML
